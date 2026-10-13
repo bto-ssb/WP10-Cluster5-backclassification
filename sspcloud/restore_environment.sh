@@ -6,15 +6,13 @@ cd $MY_REPO
 
 # Create a virtual environment and install project dependencies
 
-# OWN CODE TO RUN WITH JUPYTER-PYTHON BEGIN:
-# replaced: uv sync 
+ 
 
-#uv add --dev ipykernel   # try removing - OWN CODE
 uv sync
 
-#uv run python -m ipykernel install --user --name my-project --display-name "Python (my-project)"   # try removing - OWN CODE
+# Create kernel: uv run ipython kernel install --user --name="python-classification" Switch to this kernel (see top right in jupyter)
 
-# OWN CODE TO RUN WITH JUPYTER-PYTHON END.
+
 
 # Change directory
 cd ..
